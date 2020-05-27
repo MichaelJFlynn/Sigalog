@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name="Sigalog",
-      version="0.3",
+      version="0.4",
       description="Easy URL signing",
       url="https://github.com/MichaelJFlynn/Sigalog",
       author="Michael J. Flynn",

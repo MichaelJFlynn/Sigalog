@@ -54,7 +54,7 @@ elif command=="sign":
             f.close()
             priv = asym.load_private_key(privkey, u'salt')
             
-            sig = asym.rsa_pss_sign(priv, bytes(url), "sha256")
+            sig = asym.rsa_pss_sign(priv, bytes(url, 'utf-8'), "sha256")
             print(base64.b64encode(sig).decode())
 else:
     print(help_text)
