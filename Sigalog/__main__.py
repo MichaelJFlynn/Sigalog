@@ -44,8 +44,6 @@ elif command=="sign":
         print(help_text)
     else:
         url = sys.argv[2]
-        print("signing url: "+url)
-
         if not os.path.isfile(privkey_filename):
             print(privkey_filename + " does not exist, run the make_key command.")
         else:
