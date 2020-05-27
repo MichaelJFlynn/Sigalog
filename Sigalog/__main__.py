@@ -33,8 +33,8 @@ if command=="make_key":
     else:
         print("Generating Key Pair")
         pub, priv = asym.generate_pair("rsa", bit_size = 2048)
-        pub_f = open(pubkey_filename, 'w')
-        priv_f = open(privkey_filename, 'w')
+        pub_f = open(pubkey_filename, 'wb')
+        priv_f = open(privkey_filename, 'wb')
         pub_f.write(asym.dump_public_key(pub, "pem"))
         priv_f.write(asym.dump_private_key(priv, u'salt', "pem"))
         pub_f.close()
