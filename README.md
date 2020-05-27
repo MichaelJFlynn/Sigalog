@@ -1,6 +1,6 @@
 # Sigalog: Easy Signing URLs.
 
-This module has only two uses:
+This module has two uses:
 
 `python -m Sigalog make_key`
 
